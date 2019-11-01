@@ -57,6 +57,8 @@ class crawler():
                 if self.check_pathway(query):
                     print("Pathways from " + from_id + " to " + to_id + " found!")
                     outfile.write(query + "\n")
+                else:
+                    print("no pathway from " + from_id + " to " + to_id )
 
         outfile.close()
 
